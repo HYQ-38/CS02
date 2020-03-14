@@ -1,0 +1,30 @@
+C#企业级开发技术练习2答题卡
+
+班级：    信息管理1班 
+姓名：     黄远茜
+学号：     20190307138
+
+注：请将答案放置在序号下方。*/
+
+（一）
+            string[] course = { "JavaScript", "net", "ecmascript", "java" };
+            int i = 97;
+            foreach (string c in course)
+            {
+                Console.Write(c.PadRight(101, '&'));
+                Console.WriteLine($"{i++.ToString().PadLeft(6, '*')}");
+
+
+（二） string fs = "javascript,net,ecmascript,golang,java";
+            string[] r = fs.Split(',');
+            foreach (string s in r)
+             Console.WriteLine(s);
+            string[] course = { "asp", "php", "jsp", "python" };
+            int i = 4, j = 2, k = 3;
+            foreach (string s in course)
+            {
+                if (s.Contains("p")) i++;
+                if (s.StartsWith("p")) j++;
+                if (s.EndsWith("p")) k++;
+            }
+            Console.WriteLine($"包含a:{i},p开头:{j},p结尾:{k}");
